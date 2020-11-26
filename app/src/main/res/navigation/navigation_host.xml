@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_host"
+    app:startDestination="@id/fragment_feeds">
+
+    <fragment
+        android:id="@+id/fragment_feeds"
+        android:name="com.example.collegeinsta.NewsFeed"
+        android:label="fragment_news_feed"
+        tools:layout="@layout/fragment_news_feed" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.collegeinsta.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/followerFragment"
+        android:name="com.example.collegeinsta.FollowerFragment"
+        android:label="fragment_follower"
+        tools:layout="@layout/fragment_follower" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.collegeinsta.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
